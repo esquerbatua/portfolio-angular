@@ -1,6 +1,7 @@
 .app-header {
     position: fixed;
     background-color: white;
+    z-index: 1000;
     width: 100%;
     height: 50px;
     margin-top: -50px;
@@ -43,6 +44,7 @@
 .icon-nav {
     position: fixed;
     cursor: pointer;
+    z-index: 1000;
     bottom: 20px;
     right: 20px;
     padding: 12px 15px;
@@ -62,15 +64,20 @@
 }
 
 .options-nav {
-    position: absolute;
+    position: fixed;
     display: none;
     bottom: 90px;
     right: 30px;
+    z-index: 900;
     background-color: white;
     padding: 0;
     border-radius: 20px;
     /*Sombras*/
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.options-nav-item {
+    cursor: pointer;
 }
 
 .options-nav ul li {
@@ -112,6 +119,7 @@
 
 .header-menu {
     display: none;
+    cursor: pointer;
 }
 
 @media (min-width:768px) {
