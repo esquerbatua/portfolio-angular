@@ -12,4 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollAbout(){
+    $('html, body').animate({ scrollTop: $('#section-me').offset().top}, 600);
+  }
 }

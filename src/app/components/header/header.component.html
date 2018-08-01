@@ -6,9 +6,8 @@
     <div class="header-menu">
         <ul>
             <li class="header-menu"><a href="">INICIO</a></li>
-            <li class="header-menu"><a href="#section-me">SOBRE MI</a></li>
-            <li class="header-menu"><a data-toggle="modal" data-target="#myModal">PORTAFOLIO</a></li>
-            <li class="header-menu"><a href="">CONTACTAME</a></li>
+            <li class="header-menu"><a (click)="scrollAbout()">SOBRE MI</a></li>
+            <button class="this-btn btn-change animated fadeIn" data-toggle="modal" data-target="#ModalContact">Contáctame</button>
         </ul>
     </div>
 </div>
@@ -19,8 +18,8 @@
 <div class="animated fadeIn options-nav">
     <ul>
         <li class="options-nav-item"><a href=""><span class="glyphicon glyphicon-home"></span>&nbsp; Inicio</a></li>
-        <li class="options-nav-item"><a href=""><span class="glyphicon glyphicon-user"></span>&nbsp; Sobre mi</a></li>
+        <li class="options-nav-item"><a (click)="scrollAbout()"><span class="glyphicon glyphicon-user"></span>&nbsp; Sobre mi</a></li>
         <li class="options-nav-item"><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-picture"></span>&nbsp; Portafolio</a></li>
-        <li class="options-nav-item b-not"><a href=""><span class="glyphicon glyphicon-comment"></span>&nbsp; Contactame</a></li>
+        <li class="options-nav-item b-not"><a data-toggle="modal" data-target="#ModalContact"><span class="glyphicon glyphicon-comment"></span>&nbsp; Contactame</a></li>
     </ul>
 </div>
