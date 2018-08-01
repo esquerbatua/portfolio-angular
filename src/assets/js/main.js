@@ -9,3 +9,7 @@ $(window).scroll(function() {
         'background-position': '0 -' + posicion + 'px'
     });
 });
+
+function scrollAbout() {
+    $('html, body').animate({ scrollTop: $('#section-me').offset().top }, 600);
+}
