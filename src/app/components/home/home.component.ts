@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  public data: any = {};
+  constructor(
+    private _infoPaginaService: InfoPaginaService
+  ) { this.data = _infoPaginaService;
+  }
 
   ngOnInit() {
   }

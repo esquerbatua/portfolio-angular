@@ -146,42 +146,8 @@ article .info-me {
     }
 }
 
-.contact {
-    background-color: whitesmoke;
-}
-
-.modal-cont h3,
-.modal-title {
-    font-family: var(--font-title);
-    color: var(--color-oscuro);
-}
-
-.modal-cont h5 {
-    font-family: var(--font-title);
-}
-
-.redes {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.redes h5 {
-    padding: 0 10px;
-    margin: auto;
-}
-
-.img-contact,
-.img-contact img {
-    width: 100%;
-    max-width: 250px;
-    margin: auto;
-}
-
-.messages {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.messages div {
-    margin: auto;
+@media (max-height:500px) {
+    .home-item {
+        padding-top: 0;
+    }
 }
