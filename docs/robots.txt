@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap:https://efraperalta.github.io/portfolio-angular/sitemap.xml
