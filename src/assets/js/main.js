@@ -10,10 +10,6 @@ $(window).scroll(function() {
     });
 });
 
-function scrollAbout() {
-    $('html, body').animate({ scrollTop: $('#section-me').offset().top }, 600);
-}
-
 var ano = (new Date).getFullYear();
 
 $(document).ready(function() {
