@@ -4,7 +4,9 @@
     --font-default: 'Podkova', serif;
     --color-oscuro: #4034B0;
 }
-
+*{
+    z-index:100;
+}
 body,
 html {
     margin: 0;
